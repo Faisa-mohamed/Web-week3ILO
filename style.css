@@ -1,0 +1,154 @@
+@import url('https://googleapis.com');
+
+body {
+    font-family: 'Inter', sans-serif;
+    margin: 0;
+    padding: 40px 20px;
+    background-color: #f1f5f9;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+h1, h2, h3, .expense-table th, summary {
+    font-family: 'Poppins', sans-serif;
+}
+
+.main-header,
+.add-expense-section,
+.expenses-section,
+.media-section {
+    background-color: #ffffff;
+    padding: 24px;
+    border-radius: 12px;
+    margin-bottom: 24px;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05), 0 2px 4px -1px rgba(0, 0, 0, 0.03);
+    border: 1px solid #e2e8f0;
+}
+
+.main-header {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    border-top: 5px solid #251be3;
+}
+
+.header-text-group p {
+    margin: 4px 0 0 0;
+    color: #64748b;
+    font-size: 1rem;
+}
+
+.expenses-section {
+    overflow-x: auto;
+}
+
+.expense-table {
+    width: 100%;
+    border-collapse: collapse; 
+    margin-top: 15px;
+    background-color: #ffffff;
+}
+
+.expense-table th, 
+.expense-table td {
+    border: 1px solid #e2e8f0;
+    padding: 12px;             
+    text-align: left;
+}
+
+.expense-table th {
+    background-color: #251be3;
+    color: white;
+}
+
+.expense-table tbody tr:nth-child(even) {
+    background-color: #f8fafc; 
+}
+
+.expense-table tbody tr:hover {
+    background-color: #d1f2d9; 
+    transition: background-color 0.2s ease;
+}
+
+.expenses-section td {
+    font-size: 14px;
+    color: #333;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 15px;
+}
+
+form label {
+    font-size: 0.875rem;
+    font-weight: 500;
+    color: #475569;
+    margin-bottom: 6px;
+}
+
+form input, form select {
+    width: 100%;
+    max-width: 300px;
+    padding: 10px;
+    border: 1px solid #cbd5e1;
+    border-radius: 6px;
+    font-family: 'Inter', sans-serif;
+}
+
+input:focus, select:focus {
+    border-color: #2e92cc;
+    outline: none;
+    box-shadow: 0 0 5px rgba(46, 204, 113, 0.5);
+}
+
+button {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    cursor: pointer; 
+    background-color: #2e31cc;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 6px;
+    transition: background-color 0.2s ease;
+}
+
+button:hover {
+    background-color: #1e21a1;
+}
+
+details {
+    background-color: #2e31cc;
+    padding: 24px;
+    border-radius: 12px;
+    margin-bottom: 24px;
+    color: #ffffff;
+    border: 1px solid #1e21a1;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05);
+}
+
+summary {
+    font-weight: 600;
+    color: #ffffff;
+    cursor: pointer;
+    outline: none;
+}
+
+details p {
+    margin-top: 12px;
+    color: #ffffff;
+    font-size: 0.95rem;
+    line-height: 1.6;
+}
+
+.media-section iframe {
+    width: 100%;
+    max-width: 560px;
+    height: 315px;
+    border-radius: 8px;
+    border: none;
+    margin-top: 15px;
+}

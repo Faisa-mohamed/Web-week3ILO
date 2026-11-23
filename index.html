@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Budget Tracker — Personal Financial Dashboard</title>
+    <link rel="preconnect" href="https://googleapis.com">
+    <link rel="preconnect" href="https://gstatic.com" crossorigin>
+    <link href="https://googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Poppins:wght@500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header class="main-header">
+        <div class="header-branding">
+            <img src="trax.jpg" alt="Budget Tracker Logo" width="80" height="80">
+            <div class="header-text-group">
+                <h1>My Budget Tracker</h1>
+                <p>Track your income and expenses in one secure place.</p>
+            </div>
+        </div>
+    </header>
+
+    <details class="help-directory-card">
+        <summary>How to use this tracker</summary>
+        <div class="details-content">
+            <p>Fill out the expense form below by entering the item name, amount, category, and date. Click 'Add Expense' to instantly submit your entries to the analytics table log matrix system.</p>
+        </div>
+    </details>
+
+    <section id="add-expense" class="add-expense-section">
+        <form id="expense-form">
+            <h2>Add New Expense</h2>
+            
+            <div class="form-group">
+                <label for="expense-name">Expense Name</label>
+                <input type="text" id="expense-name" placeholder="e.g. Groceries" required>
+            </div>
+
+            <div class="form-group">
+                <label for="expense-amount">Amount (KSh)</label>
+                <input type="number" id="expense-amount" placeholder="e.g. 1500" min="0" required>
+            </div>
+
+            <div class="form-group">
+                <label for="expense-category">Category</label>
+                <select id="expense-category" required>
+                    <option value="" disabled selected>Choose a category...</option>
+                    <option value="Food">Food</option>
+                    <option value="Transport">Transport</option>
+                    <option value="Rent">Rent</option>
+                    <option value="Entertainment">Entertainment</option>
+                    <option value="Other">Other</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="expense-date">Date</label>
+                <input type="date" id="expense-date" required>
+            </div>
+
+            <button type="button" id="submit-btn">Add Expense</button>
+        </form>
+    </section>
+
+    <section class="expenses-section">
+        <h2>Your Expenses Logs</h2>
+        <div class="table-responsive-wrapper">
+            <table class="expense-table">
+                <thead>
+                    <tr>
+                        <th>Name</th>
+                        <th>Amount</th>
+                        <th>Category</th>
+                        <th>Date</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Groceries</td>
+                        <td>KSh 1,500</td>
+                        <td>Food</td>
+                        <td>2026-09-08</td>
+                    </tr>
+                    <tr>
+                        <td>Matatu Fare</td>
+                        <td>KSh 300</td>
+                        <td>Transport</td>
+                        <td>2026-09-08</td>
+                    </tr>
+                    <tr>
+                        <td>House Rent</td>
+                        <td>KSh 15,000</td>
+                        <td>Rent</td>
+                        <td>2026-09-01</td>
+                    </tr>
+                    <tr>
+                        <td>Movie Ticket</td>
+                        <td>KSh 800</td>
+                        <td>Entertainment</td>
+                        <td>2026-09-05</td>
+                    </tr>
+                    <tr>
+                        <td>Electricity Bill</td>
+                        <td>KSh 2,200</td>
+                        <td>Other</td>
+                        <td>2026-09-06</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </section>
+
+    <section class="media-section">
+        <h3>Learn Budgeting Tips</h3>
+        <div class="video-container-frame">
+            <iframe src="https://youtube.com" title="YouTube video player" allowfullscreen></iframe>
+        </div>
+    </section>
+
+</body>
+</html>
